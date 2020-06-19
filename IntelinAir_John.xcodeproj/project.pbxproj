@@ -1,0 +1,805 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		76E049E3B663E6961CFEEEFB /* Pods_IntelinAir_John.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA8360543454927547ED534 /* Pods_IntelinAir_John.framework */; };
+		B140985124961B0C003A08AF /* FlightMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B140985024961B0C003A08AF /* FlightMapViewController.swift */; };
+		B14098532497705E003A08AF /* FlightMap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B14098522497705E003A08AF /* FlightMap.storyboard */; };
+		B1488CCD24938E8500D6F175 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1488CCC24938E8500D6F175 /* AppDelegate.swift */; };
+		B1488CCF24938E8500D6F175 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1488CCE24938E8500D6F175 /* SceneDelegate.swift */; };
+		B1488CD424938E8500D6F175 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1488CD224938E8500D6F175 /* Main.storyboard */; };
+		B1488CD624938E8800D6F175 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1488CD524938E8800D6F175 /* Assets.xcassets */; };
+		B1488CD924938E8800D6F175 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1488CD724938E8800D6F175 /* LaunchScreen.storyboard */; };
+		B1488CE72493914200D6F175 /* URLComponentsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1488CE62493914200D6F175 /* URLComponentsExtension.swift */; };
+		B1488CE92493915000D6F175 /* URLRequestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1488CE82493915000D6F175 /* URLRequestExtension.swift */; };
+		B1488CEB2493917300D6F175 /* URLSessionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1488CEA2493917300D6F175 /* URLSessionProvider.swift */; };
+		B1488CED249391B400D6F175 /* EndpointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1488CEC249391B400D6F175 /* EndpointType.swift */; };
+		B1488CEF249391C000D6F175 /* ProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1488CEE249391BF00D6F175 /* ProviderProtocol.swift */; };
+		B1488CF1249391CA00D6F175 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1488CF0249391CA00D6F175 /* URLSessionProtocol.swift */; };
+		B1488CF32493922500D6F175 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1488CF22493922500D6F175 /* HTTPTask.swift */; };
+		B1488CF52493923200D6F175 /* ParametersEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1488CF42493923200D6F175 /* ParametersEncoding.swift */; };
+		B1488CF72493923D00D6F175 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1488CF62493923D00D6F175 /* NetworkResponse.swift */; };
+		B1488CF92493924700D6F175 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1488CF82493924700D6F175 /* NetworkError.swift */; };
+		B1488CFB2493925900D6F175 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1488CFA2493925900D6F175 /* HTTPMethod.swift */; };
+		B1488CFD2493927000D6F175 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1488CFC2493927000D6F175 /* NetworkLogger.swift */; };
+		B18197202493CD81001E9B8B /* StoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B181971F2493CD81001E9B8B /* StoryboardExtension.swift */; };
+		B18197232493D03A001E9B8B /* Flight.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18197222493D03A001E9B8B /* Flight.storyboard */; };
+		B18197272493D07C001E9B8B /* FlightListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18197262493D07C001E9B8B /* FlightListViewController.swift */; };
+		B181972A2493D571001E9B8B /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18197292493D571001E9B8B /* ReusableView.swift */; };
+		B181972C2493D5CD001E9B8B /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B181972B2493D5CD001E9B8B /* UITableViewExtension.swift */; };
+		B18197302493DAF0001E9B8B /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B181972F2493DAF0001E9B8B /* BaseTableViewCell.swift */; };
+		B18197332493DB62001E9B8B /* FlightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18197312493DB62001E9B8B /* FlightTableViewCell.swift */; };
+		B18197342493DB62001E9B8B /* FlightTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B18197322493DB62001E9B8B /* FlightTableViewCell.xib */; };
+		B18197362493DE20001E9B8B /* FlightListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18197352493DE20001E9B8B /* FlightListViewModel.swift */; };
+		B181974024952EE9001E9B8B /* FlightService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B181973F24952EE9001E9B8B /* FlightService.swift */; };
+		B181974224952F5C001E9B8B /* GeneralFlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = B181974124952F5C001E9B8B /* GeneralFlight.swift */; };
+		B181974424952F95001E9B8B /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = B181974324952F95001E9B8B /* Flight.swift */; };
+		B181974624952FC8001E9B8B /* Tileset.swift in Sources */ = {isa = PBXBuildFile; fileRef = B181974524952FC8001E9B8B /* Tileset.swift */; };
+		B181974B249535D7001E9B8B /* FlightAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B181974A249535D7001E9B8B /* FlightAPI.swift */; };
+		B181974D2495362B001E9B8B /* GeneralFlightDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = B181974C2495362B001E9B8B /* GeneralFlightDTO+Mapping.swift */; };
+		B181974F24953673001E9B8B /* FlightDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = B181974E24953673001E9B8B /* FlightDTO+Mapping.swift */; };
+		B18197512495368A001E9B8B /* TilesetDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18197502495368A001E9B8B /* TilesetDTO+Mapping.swift */; };
+		B1819753249543F8001E9B8B /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1819752249543F8001E9B8B /* Observable.swift */; };
+		B18197562495506C001E9B8B /* FlightSectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18197552495506C001E9B8B /* FlightSectionViewModel.swift */; };
+		B1819758249550AA001E9B8B /* FlightRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1819757249550AA001E9B8B /* FlightRowViewModel.swift */; };
+		B18742B52497D38600583DF6 /* dc-metro.geojson in Resources */ = {isa = PBXBuildFile; fileRef = B18742B42497D38600583DF6 /* dc-metro.geojson */; };
+		B18742B72497E30A00583DF6 /* geometry.geojson in Resources */ = {isa = PBXBuildFile; fileRef = B18742B62497E30900583DF6 /* geometry.geojson */; };
+		B18742B9249AD6BB00583DF6 /* FlightMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18742B8249AD6BA00583DF6 /* FlightMapViewModel.swift */; };
+		B18742BC249ADCBF00583DF6 /* FeatureCollectionDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18742BB249ADCBF00583DF6 /* FeatureCollectionDTO+Mapping.swift */; };
+		B18742BE249ADCCD00583DF6 /* FeatureDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18742BD249ADCCD00583DF6 /* FeatureDTO+Mapping.swift */; };
+		B18742C0249ADCDA00583DF6 /* GeometryDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18742BF249ADCDA00583DF6 /* GeometryDTO+Mapping.swift */; };
+		B18742C3249ADD4600583DF6 /* FeatureCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18742C2249ADD4600583DF6 /* FeatureCollection.swift */; };
+		B18742C5249ADD4E00583DF6 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18742C4249ADD4E00583DF6 /* Feature.swift */; };
+		B18742C7249ADD5700583DF6 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18742C6249ADD5700583DF6 /* Geometry.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1591170B1A6F5AB3C799347E /* Pods-IntelinAir_John.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelinAir_John.debug.xcconfig"; path = "Target Support Files/Pods-IntelinAir_John/Pods-IntelinAir_John.debug.xcconfig"; sourceTree = "<group>"; };
+		4BA8360543454927547ED534 /* Pods_IntelinAir_John.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntelinAir_John.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D4C4A22FC4F5C6A3D9EBFA3 /* Pods-IntelinAir_John.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelinAir_John.release.xcconfig"; path = "Target Support Files/Pods-IntelinAir_John/Pods-IntelinAir_John.release.xcconfig"; sourceTree = "<group>"; };
+		B140985024961B0C003A08AF /* FlightMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightMapViewController.swift; sourceTree = "<group>"; };
+		B14098522497705E003A08AF /* FlightMap.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FlightMap.storyboard; sourceTree = "<group>"; };
+		B1488CC924938E8500D6F175 /* IntelinAir_John.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntelinAir_John.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1488CCC24938E8500D6F175 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B1488CCE24938E8500D6F175 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B1488CD324938E8500D6F175 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B1488CD524938E8800D6F175 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1488CD824938E8800D6F175 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B1488CDA24938E8800D6F175 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1488CE62493914200D6F175 /* URLComponentsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLComponentsExtension.swift; sourceTree = "<group>"; };
+		B1488CE82493915000D6F175 /* URLRequestExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestExtension.swift; sourceTree = "<group>"; };
+		B1488CEA2493917300D6F175 /* URLSessionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProvider.swift; sourceTree = "<group>"; };
+		B1488CEC249391B400D6F175 /* EndpointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointType.swift; sourceTree = "<group>"; };
+		B1488CEE249391BF00D6F175 /* ProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderProtocol.swift; sourceTree = "<group>"; };
+		B1488CF0249391CA00D6F175 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		B1488CF22493922500D6F175 /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		B1488CF42493923200D6F175 /* ParametersEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametersEncoding.swift; sourceTree = "<group>"; };
+		B1488CF62493923D00D6F175 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		B1488CF82493924700D6F175 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		B1488CFA2493925900D6F175 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		B1488CFC2493927000D6F175 /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		B181971F2493CD81001E9B8B /* StoryboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardExtension.swift; sourceTree = "<group>"; };
+		B18197222493D03A001E9B8B /* Flight.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Flight.storyboard; sourceTree = "<group>"; };
+		B18197262493D07C001E9B8B /* FlightListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightListViewController.swift; sourceTree = "<group>"; };
+		B18197292493D571001E9B8B /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		B181972B2493D5CD001E9B8B /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		B181972F2493DAF0001E9B8B /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		B18197312493DB62001E9B8B /* FlightTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTableViewCell.swift; sourceTree = "<group>"; };
+		B18197322493DB62001E9B8B /* FlightTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlightTableViewCell.xib; sourceTree = "<group>"; };
+		B18197352493DE20001E9B8B /* FlightListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightListViewModel.swift; sourceTree = "<group>"; };
+		B181973F24952EE9001E9B8B /* FlightService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightService.swift; sourceTree = "<group>"; };
+		B181974124952F5C001E9B8B /* GeneralFlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralFlight.swift; sourceTree = "<group>"; };
+		B181974324952F95001E9B8B /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		B181974524952FC8001E9B8B /* Tileset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tileset.swift; sourceTree = "<group>"; };
+		B181974A249535D7001E9B8B /* FlightAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightAPI.swift; sourceTree = "<group>"; };
+		B181974C2495362B001E9B8B /* GeneralFlightDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GeneralFlightDTO+Mapping.swift"; sourceTree = "<group>"; };
+		B181974E24953673001E9B8B /* FlightDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlightDTO+Mapping.swift"; sourceTree = "<group>"; };
+		B18197502495368A001E9B8B /* TilesetDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TilesetDTO+Mapping.swift"; sourceTree = "<group>"; };
+		B1819752249543F8001E9B8B /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		B18197552495506C001E9B8B /* FlightSectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSectionViewModel.swift; sourceTree = "<group>"; };
+		B1819757249550AA001E9B8B /* FlightRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightRowViewModel.swift; sourceTree = "<group>"; };
+		B18742B42497D38600583DF6 /* dc-metro.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "dc-metro.geojson"; sourceTree = "<group>"; };
+		B18742B62497E30900583DF6 /* geometry.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = geometry.geojson; sourceTree = "<group>"; };
+		B18742B8249AD6BA00583DF6 /* FlightMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightMapViewModel.swift; sourceTree = "<group>"; };
+		B18742BB249ADCBF00583DF6 /* FeatureCollectionDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeatureCollectionDTO+Mapping.swift"; sourceTree = "<group>"; };
+		B18742BD249ADCCD00583DF6 /* FeatureDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeatureDTO+Mapping.swift"; sourceTree = "<group>"; };
+		B18742BF249ADCDA00583DF6 /* GeometryDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GeometryDTO+Mapping.swift"; sourceTree = "<group>"; };
+		B18742C2249ADD4600583DF6 /* FeatureCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCollection.swift; sourceTree = "<group>"; };
+		B18742C4249ADD4E00583DF6 /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
+		B18742C6249ADD5700583DF6 /* Geometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1488CC624938E8500D6F175 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76E049E3B663E6961CFEEEFB /* Pods_IntelinAir_John.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9962B815B29C903B359C17FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BA8360543454927547ED534 /* Pods_IntelinAir_John.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9DF0ECDB4DD334E6786715D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1591170B1A6F5AB3C799347E /* Pods-IntelinAir_John.debug.xcconfig */,
+				8D4C4A22FC4F5C6A3D9EBFA3 /* Pods-IntelinAir_John.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B140984C24961A4C003A08AF /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B18197212493CDAF001E9B8B /* FlightListScene */,
+				B140984D24961A78003A08AF /* FlightMapScene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		B140984D24961A78003A08AF /* FlightMapScene */ = {
+			isa = PBXGroup;
+			children = (
+				B140984F24961A83003A08AF /* ViewModel */,
+				B140984E24961A82003A08AF /* View */,
+			);
+			path = FlightMapScene;
+			sourceTree = "<group>";
+		};
+		B140984E24961A82003A08AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B140985024961B0C003A08AF /* FlightMapViewController.swift */,
+				B14098522497705E003A08AF /* FlightMap.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B140984F24961A83003A08AF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B18742B8249AD6BA00583DF6 /* FlightMapViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B1488CC024938E8500D6F175 = {
+			isa = PBXGroup;
+			children = (
+				B1488CCB24938E8500D6F175 /* IntelinAir_John */,
+				B1488CCA24938E8500D6F175 /* Products */,
+				9DF0ECDB4DD334E6786715D5 /* Pods */,
+				9962B815B29C903B359C17FA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B1488CCA24938E8500D6F175 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1488CC924938E8500D6F175 /* IntelinAir_John.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1488CCB24938E8500D6F175 /* IntelinAir_John */ = {
+			isa = PBXGroup;
+			children = (
+				B181971C2493CC10001E9B8B /* Application */,
+				B181971B2493CC05001E9B8B /* Presentation */,
+				B181973B24952E46001E9B8B /* Domain */,
+				B18197472495338A001E9B8B /* Data */,
+				B1488CE024938EE200D6F175 /* Networking */,
+				B1488CD224938E8500D6F175 /* Main.storyboard */,
+				B1488CD524938E8800D6F175 /* Assets.xcassets */,
+				B1488CD724938E8800D6F175 /* LaunchScreen.storyboard */,
+				B18742B42497D38600583DF6 /* dc-metro.geojson */,
+				B18742B62497E30900583DF6 /* geometry.geojson */,
+				B1488CDA24938E8800D6F175 /* Info.plist */,
+			);
+			path = IntelinAir_John;
+			sourceTree = "<group>";
+		};
+		B1488CE024938EE200D6F175 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B1488CE5249390FF00D6F175 /* Extension */,
+				B1488CE4249390FB00D6F175 /* Provider */,
+				B1488CE2249390F700D6F175 /* Protocol */,
+				B1488CE1249390F400D6F175 /* Enum */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B1488CE1249390F400D6F175 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				B1488CF22493922500D6F175 /* HTTPTask.swift */,
+				B1488CF42493923200D6F175 /* ParametersEncoding.swift */,
+				B1488CF62493923D00D6F175 /* NetworkResponse.swift */,
+				B1488CF82493924700D6F175 /* NetworkError.swift */,
+				B1488CFA2493925900D6F175 /* HTTPMethod.swift */,
+				B1488CFC2493927000D6F175 /* NetworkLogger.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		B1488CE2249390F700D6F175 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				B1488CEC249391B400D6F175 /* EndpointType.swift */,
+				B1488CEE249391BF00D6F175 /* ProviderProtocol.swift */,
+				B1488CF0249391CA00D6F175 /* URLSessionProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		B1488CE4249390FB00D6F175 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				B1488CEA2493917300D6F175 /* URLSessionProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		B1488CE5249390FF00D6F175 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B1488CE62493914200D6F175 /* URLComponentsExtension.swift */,
+				B1488CE82493915000D6F175 /* URLRequestExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B181971B2493CC05001E9B8B /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B140984C24961A4C003A08AF /* Scenes */,
+				B181971D2493CC97001E9B8B /* Util */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B181971C2493CC10001E9B8B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				B1488CCC24938E8500D6F175 /* AppDelegate.swift */,
+				B1488CCE24938E8500D6F175 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		B181971D2493CC97001E9B8B /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				B181972E2493DAE3001E9B8B /* Base */,
+				B18197282493D51B001E9B8B /* Protocol */,
+				B181971E2493CD46001E9B8B /* Extension */,
+				B1819752249543F8001E9B8B /* Observable.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		B181971E2493CD46001E9B8B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B181971F2493CD81001E9B8B /* StoryboardExtension.swift */,
+				B181972B2493D5CD001E9B8B /* UITableViewExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B18197212493CDAF001E9B8B /* FlightListScene */ = {
+			isa = PBXGroup;
+			children = (
+				B18197252493D05B001E9B8B /* ViewModel */,
+				B18197242493D059001E9B8B /* View */,
+			);
+			path = FlightListScene;
+			sourceTree = "<group>";
+		};
+		B18197242493D059001E9B8B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B18197222493D03A001E9B8B /* Flight.storyboard */,
+				B18197262493D07C001E9B8B /* FlightListViewController.swift */,
+				B181972D2493DAC9001E9B8B /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B18197252493D05B001E9B8B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B18197352493DE20001E9B8B /* FlightListViewModel.swift */,
+				B18197542495505C001E9B8B /* Use cases */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B18197282493D51B001E9B8B /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				B18197292493D571001E9B8B /* ReusableView.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		B181972D2493DAC9001E9B8B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B18197312493DB62001E9B8B /* FlightTableViewCell.swift */,
+				B18197322493DB62001E9B8B /* FlightTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		B181972E2493DAE3001E9B8B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B181972F2493DAF0001E9B8B /* BaseTableViewCell.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B181973B24952E46001E9B8B /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				B181973E24952E5C001E9B8B /* Entity */,
+				B181973D24952E5B001E9B8B /* Service */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		B181973D24952E5B001E9B8B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B181973F24952EE9001E9B8B /* FlightService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B181973E24952E5C001E9B8B /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				B181974124952F5C001E9B8B /* GeneralFlight.swift */,
+				B181974324952F95001E9B8B /* Flight.swift */,
+				B181974524952FC8001E9B8B /* Tileset.swift */,
+				B18742C1249ADD2700583DF6 /* Feature Collection */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		B18197472495338A001E9B8B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B18197492495339D001E9B8B /* DataMapping */,
+				B181974824953394001E9B8B /* API */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B181974824953394001E9B8B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				B181974A249535D7001E9B8B /* FlightAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		B18197492495339D001E9B8B /* DataMapping */ = {
+			isa = PBXGroup;
+			children = (
+				B181974C2495362B001E9B8B /* GeneralFlightDTO+Mapping.swift */,
+				B181974E24953673001E9B8B /* FlightDTO+Mapping.swift */,
+				B18197502495368A001E9B8B /* TilesetDTO+Mapping.swift */,
+				B18742BA249ADCA600583DF6 /* FeatureCollection */,
+			);
+			path = DataMapping;
+			sourceTree = "<group>";
+		};
+		B18197542495505C001E9B8B /* Use cases */ = {
+			isa = PBXGroup;
+			children = (
+				B18197552495506C001E9B8B /* FlightSectionViewModel.swift */,
+				B1819757249550AA001E9B8B /* FlightRowViewModel.swift */,
+			);
+			path = "Use cases";
+			sourceTree = "<group>";
+		};
+		B18742BA249ADCA600583DF6 /* FeatureCollection */ = {
+			isa = PBXGroup;
+			children = (
+				B18742BB249ADCBF00583DF6 /* FeatureCollectionDTO+Mapping.swift */,
+				B18742BD249ADCCD00583DF6 /* FeatureDTO+Mapping.swift */,
+				B18742BF249ADCDA00583DF6 /* GeometryDTO+Mapping.swift */,
+			);
+			path = FeatureCollection;
+			sourceTree = "<group>";
+		};
+		B18742C1249ADD2700583DF6 /* Feature Collection */ = {
+			isa = PBXGroup;
+			children = (
+				B18742C2249ADD4600583DF6 /* FeatureCollection.swift */,
+				B18742C4249ADD4E00583DF6 /* Feature.swift */,
+				B18742C6249ADD5700583DF6 /* Geometry.swift */,
+			);
+			path = "Feature Collection";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1488CC824938E8500D6F175 /* IntelinAir_John */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1488CDD24938E8800D6F175 /* Build configuration list for PBXNativeTarget "IntelinAir_John" */;
+			buildPhases = (
+				3D5C669ADE90FBF7C8976F08 /* [CP] Check Pods Manifest.lock */,
+				B1488CC524938E8500D6F175 /* Sources */,
+				B1488CC624938E8500D6F175 /* Frameworks */,
+				B1488CC724938E8500D6F175 /* Resources */,
+				4F069F9BB7CBD51659D8DDA0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntelinAir_John;
+			productName = IntelinAir_John;
+			productReference = B1488CC924938E8500D6F175 /* IntelinAir_John.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1488CC124938E8500D6F175 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "John Harutyunyan";
+				TargetAttributes = {
+					B1488CC824938E8500D6F175 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = B1488CC424938E8500D6F175 /* Build configuration list for PBXProject "IntelinAir_John" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B1488CC024938E8500D6F175;
+			productRefGroup = B1488CCA24938E8500D6F175 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1488CC824938E8500D6F175 /* IntelinAir_John */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1488CC724938E8500D6F175 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B18197342493DB62001E9B8B /* FlightTableViewCell.xib in Resources */,
+				B18742B72497E30A00583DF6 /* geometry.geojson in Resources */,
+				B1488CD924938E8800D6F175 /* LaunchScreen.storyboard in Resources */,
+				B1488CD624938E8800D6F175 /* Assets.xcassets in Resources */,
+				B18742B52497D38600583DF6 /* dc-metro.geojson in Resources */,
+				B18197232493D03A001E9B8B /* Flight.storyboard in Resources */,
+				B1488CD424938E8500D6F175 /* Main.storyboard in Resources */,
+				B14098532497705E003A08AF /* FlightMap.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D5C669ADE90FBF7C8976F08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IntelinAir_John-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F069F9BB7CBD51659D8DDA0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IntelinAir_John/Pods-IntelinAir_John-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IntelinAir_John/Pods-IntelinAir_John-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IntelinAir_John/Pods-IntelinAir_John-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1488CC524938E8500D6F175 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1488CFD2493927000D6F175 /* NetworkLogger.swift in Sources */,
+				B140985124961B0C003A08AF /* FlightMapViewController.swift in Sources */,
+				B1488CF1249391CA00D6F175 /* URLSessionProtocol.swift in Sources */,
+				B1488CED249391B400D6F175 /* EndpointType.swift in Sources */,
+				B1488CFB2493925900D6F175 /* HTTPMethod.swift in Sources */,
+				B181974624952FC8001E9B8B /* Tileset.swift in Sources */,
+				B181972C2493D5CD001E9B8B /* UITableViewExtension.swift in Sources */,
+				B181974224952F5C001E9B8B /* GeneralFlight.swift in Sources */,
+				B18742C7249ADD5700583DF6 /* Geometry.swift in Sources */,
+				B181974D2495362B001E9B8B /* GeneralFlightDTO+Mapping.swift in Sources */,
+				B1819758249550AA001E9B8B /* FlightRowViewModel.swift in Sources */,
+				B1488CF32493922500D6F175 /* HTTPTask.swift in Sources */,
+				B18742C5249ADD4E00583DF6 /* Feature.swift in Sources */,
+				B18197332493DB62001E9B8B /* FlightTableViewCell.swift in Sources */,
+				B18197362493DE20001E9B8B /* FlightListViewModel.swift in Sources */,
+				B18197272493D07C001E9B8B /* FlightListViewController.swift in Sources */,
+				B18197302493DAF0001E9B8B /* BaseTableViewCell.swift in Sources */,
+				B181974F24953673001E9B8B /* FlightDTO+Mapping.swift in Sources */,
+				B1819753249543F8001E9B8B /* Observable.swift in Sources */,
+				B1488CE92493915000D6F175 /* URLRequestExtension.swift in Sources */,
+				B18742C0249ADCDA00583DF6 /* GeometryDTO+Mapping.swift in Sources */,
+				B18742BC249ADCBF00583DF6 /* FeatureCollectionDTO+Mapping.swift in Sources */,
+				B1488CF72493923D00D6F175 /* NetworkResponse.swift in Sources */,
+				B181972A2493D571001E9B8B /* ReusableView.swift in Sources */,
+				B1488CE72493914200D6F175 /* URLComponentsExtension.swift in Sources */,
+				B18742C3249ADD4600583DF6 /* FeatureCollection.swift in Sources */,
+				B1488CEB2493917300D6F175 /* URLSessionProvider.swift in Sources */,
+				B18742BE249ADCCD00583DF6 /* FeatureDTO+Mapping.swift in Sources */,
+				B18197202493CD81001E9B8B /* StoryboardExtension.swift in Sources */,
+				B18197562495506C001E9B8B /* FlightSectionViewModel.swift in Sources */,
+				B1488CF52493923200D6F175 /* ParametersEncoding.swift in Sources */,
+				B1488CCD24938E8500D6F175 /* AppDelegate.swift in Sources */,
+				B1488CF92493924700D6F175 /* NetworkError.swift in Sources */,
+				B181974024952EE9001E9B8B /* FlightService.swift in Sources */,
+				B1488CEF249391C000D6F175 /* ProviderProtocol.swift in Sources */,
+				B18742B9249AD6BB00583DF6 /* FlightMapViewModel.swift in Sources */,
+				B1488CCF24938E8500D6F175 /* SceneDelegate.swift in Sources */,
+				B18197512495368A001E9B8B /* TilesetDTO+Mapping.swift in Sources */,
+				B181974B249535D7001E9B8B /* FlightAPI.swift in Sources */,
+				B181974424952F95001E9B8B /* Flight.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B1488CD224938E8500D6F175 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1488CD324938E8500D6F175 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B1488CD724938E8800D6F175 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1488CD824938E8800D6F175 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B1488CDB24938E8800D6F175 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B1488CDC24938E8800D6F175 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1488CDE24938E8800D6F175 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1591170B1A6F5AB3C799347E /* Pods-IntelinAir_John.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N65Q68W6XD;
+				INFOPLIST_FILE = IntelinAir_John/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "test.IntelinAir-John";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B1488CDF24938E8800D6F175 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D4C4A22FC4F5C6A3D9EBFA3 /* Pods-IntelinAir_John.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N65Q68W6XD;
+				INFOPLIST_FILE = IntelinAir_John/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "test.IntelinAir-John";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1488CC424938E8500D6F175 /* Build configuration list for PBXProject "IntelinAir_John" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1488CDB24938E8800D6F175 /* Debug */,
+				B1488CDC24938E8800D6F175 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1488CDD24938E8800D6F175 /* Build configuration list for PBXNativeTarget "IntelinAir_John" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1488CDE24938E8800D6F175 /* Debug */,
+				B1488CDF24938E8800D6F175 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1488CC124938E8500D6F175 /* Project object */;
+}
